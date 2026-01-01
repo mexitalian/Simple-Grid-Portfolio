@@ -22,5 +22,6 @@ export interface ProjectItem {
   image: string;
   link: string;
   videoUrl?: string; // Optional field for video content
+  aspectRatio?: string; // e.g., "16/9", "1/1"
   tags: string[];
 }

@@ -213,12 +213,17 @@ const App: React.FC = () => {
                       size="4"
                       style={{ padding: 0, overflow: "hidden" }}
                     >
-                      <Box position="relative" style={{ aspectRatio: "16/9" }}>
+                      <Box
+                        position="relative"
+                        style={{ aspectRatio: project.aspectRatio || "16/9" }}
+                      >
                         {project.videoUrl ? (
                           <iframe
                             width="100%"
                             height="100%"
-                            src={project.videoUrl}
+                            src={`${project.videoUrl}${
+                              project.videoUrl.includes("?") ? "&" : "?"
+                            }autoplay=1&mute=1`}
                             title={project.title}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

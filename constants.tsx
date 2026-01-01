@@ -52,8 +52,9 @@ export const PROJECTS: ProjectItem[] = [
     title: "Kinetic State Vision",
     description:
       "Transforming complex data into agentic action. Explore our core philosophy and technological stack.",
-    image: "https://img.youtube.com/vi/lyNjTEs6-ZM/maxresdefault.jpg",
+    image: "./kinetic-vision.png",
     videoUrl: "https://www.youtube.com/embed/lyNjTEs6-ZM",
+    aspectRatio: "1/1",
     link: "https://youtu.be/lyNjTEs6-ZM",
     tags: ["AI", "Agentic Systems"],
   },
