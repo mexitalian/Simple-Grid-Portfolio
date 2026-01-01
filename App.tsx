@@ -19,6 +19,7 @@ import {
 import { BentoCard } from "./components/BentoCard.tsx";
 import { ProfileCard } from "./components/ProfileCard.tsx";
 import { AIChatBot } from "./components/AIChatBot.tsx";
+import { BackgroundShader } from "./components/BackgroundShader.tsx";
 import { SOCIAL_LINKS, PROJECTS } from "./constants.tsx";
 import { X, ArrowUpRight, Github, Code2, Sparkles } from "lucide-react";
 
@@ -31,7 +32,8 @@ const App: React.FC = () => {
       panelBackground="translucent"
       radius="medium"
     >
-      <Box style={{ backgroundColor: "var(--slate-1)", minHeight: "100vh" }}>
+      <BackgroundShader />
+      <Box style={{ backgroundColor: "transparent", minHeight: "100vh" }}>
         <Container size="4" p="5">
           <Flex direction="column" align="center" pt="9" pb="9">
             <Grid
